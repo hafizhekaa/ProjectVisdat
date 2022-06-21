@@ -17,14 +17,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -80,174 +72,73 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+## Tentang Project UAS Visdat Ini
+Indeks Pemabangunann Manusia (IPM) memiliki 3 dimensi dasar yaitu dimensi umur panjang dan hidup sehat, dimensi pengetahuan, serta dimensi standar hidup layak. Pada penelitian kali ini akan divisualisasikan salah satu dimensi IPM yaitu dimensi pengetahuan beserta variabel variabel lain yang mendukung dimensi pengetahuan tersebut. Variabel tersebut antara lain yaitu Angka Partisipasi Murni (APM), Angka Partisipasi Kasar (APK), dan Angka Partisipasi Sekolah (APS). Penelitian memiliki cakupan wilayah Kota Padang, Sumatera Barat mulai dari tahun 2012 hingga tahun 2021. Visualiasi yang sudah dibuat dari data kemudian akan dibuat dashboard sehingga informasi yang akan disampaikan akan tersampaikan dengan mudah.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Alat dan Sumber Data
 
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+1. Alat
+   * Tableau
+   * Ms. Excel
+2. Sumber Data
+   * [Badan Pusat Statistik](https://bps.go.id)
+   * [Kemendikbud] (https://dapo.kemdikbud.go.id/sp/2/086100)
+   * Dinas Pendidikan Kota Padang
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Tahapan Perancangan Dashboard
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Pengumpulan Data
+Penelitian ini menggunakan data Rata-rata Lama Sekolah (RLS), Harapan Lama Sekolah (HLS), Angka Partisipasi Murni (APM), Angka Partisipasi Kasar (APK), dan Angka Partisipasi Sekolah (APS) untuk tahun 2012 hingga tahun 2021 di Kota Padang yang diambil dari website Badan Pusat Statistik Kota Padang. Data lain yang digunakan yaitu jumlah sekolah per kecamatan di Kota Padang yang didapatkan dari website kemendikbud. Serta data jumlah pengajar, jumlah siswa, jumlah sekolah di Kota Padang yang didapatkan dari Dinas Pendidikan Kota Padang.
 
-### Prerequisites
+### Penyiapan Data
+Data yang telah dikumpulkan tadi akan disusun dan dikelompokkan berdasar variabel penyusunnya dan dimasukkan pada sheet yang sama pada Microsoft Excel. Data yang digunakan hanya untuk Kota Padang. Setelah itu dilakukan visualisasi data yang telah dikelompokkan tadi menggunakan aplikasi Tableau Desktop.
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+### Visualisasi Data
+Data yang sudah disiapkan kemudian diolah menggunakan Tableau sebagai berikut.
+1. Stacked Barchart
+   <img width="891" alt="Screen Shot 2022-06-21 at 11 36 50" src="https://user-images.githubusercontent.com/107905968/174717105-977960de-571c-473b-9acb-6ffeb7f71322.png">
+2. Linechart
+   <img width="891" alt="Screen Shot 2022-06-21 at 11 36 26" src="https://user-images.githubusercontent.com/107905968/174717052-c2a5396e-0072-45eb-9e4a-fb67af77eb12.png">
+3. Multiple Linechart
+   <img width="891" alt="Screen Shot 2022-06-21 at 11 36 38" src="https://user-images.githubusercontent.com/107905968/174717072-2512379c-29ab-4467-95ef-577934a73416.png">
+4. Peta
+   <img width="891" alt="Screen Shot 2022-06-21 at 11 36 12" src="https://user-images.githubusercontent.com/107905968/174717024-c4c45a4d-ddd6-4993-a7bd-7fd8e81b81a2.png">
+5. Piechart
+   <img width="702" alt="Screen Shot 2022-06-21 at 11 37 16" src="https://user-images.githubusercontent.com/107905968/174717167-b76be739-8f6e-45e9-9046-1be4bbdbc4e4.png">
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- ROADMAP -->
-## Roadmap
+### Pembuatan Dashboard
+Semua visualisasi tadi digabungkan dalam bentuk dashboard sebagai berikut.
+![Screen Shot 2022-06-21 at 11 39 52](https://user-images.githubusercontent.com/107905968/174717422-a088e3cb-f0e2-4afa-a5ff-e0c0ca83d47e.png)
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+Dashboard tersebut dapat diakses pada [link] (https://public.tableau.com/app/profile/hafizh.eka/viz/ProjectVisdat/Dashboard1?publish=yes)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Muhammad Hafizh Eka Putra - [@hafizhekaa](https://www.instagram.com/hafizhekaa/) - 221911048@stis.ac.id
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Project Link: [https://github.com/hafizhekaa/ProjectVisdat](https://github.com/hafizhekaa/ProjectVisdat)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
